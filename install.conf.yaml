@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+  ~/.config/i3/config: i3/config # Use Qtile in the future
+  ~/.config/Code/User/settings.json: vscode/settings.json
+  ~/.config/fonts/fonts.conf: fonts/fonts.conf
+  ~/.config/fish/config.fish: fish/config.fish
+
+- create:
+  - ~/git
+  - ~/.fonts
+
+- shell:
+  - [yay -S fish, Install fish shell]
+  - [echo /usr/local/bin/fish | sudo tee -a /etc/shells, Add fish to allowed shells]
+  - [chsh -s $(which fish), Change default shell to fish]
+  - [fish fonts/install.fish, Download fonts]

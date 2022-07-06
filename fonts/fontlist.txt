@@ -1,0 +1,9 @@
+Fira Code
+Fira Sans
+Droid Sans
+Droid Sans Mono
+Noto Sans
+Noto Serif
+Merriweather
+Lato
+Inter
