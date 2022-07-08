@@ -3,9 +3,7 @@
 - Step by step guide
 - Picom
 - Qtile
-- Lite XL config
 - VSCode extensions
-- Kitty
 - Firefox
 - Mime
 - Rofi

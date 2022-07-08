@@ -5,10 +5,12 @@
 - clean: ["~"]
 
 - link:
-  ~/.config/i3/config: i3/config # Use Qtile in the future
-  ~/.config/Code/User/settings.json: vscode/settings.json
-  ~/.config/fonts/fonts.conf: fonts/fonts.conf
   ~/.config/fish/config.fish: fish/config.fish
+  ~/.config/fonts/fonts.conf: fonts/fonts.conf
+  ~/.config/i3/config: i3/config # Use Qtile in the future
+  ~/.config/kitty/kitty.conf: kitty/kitty.conf
+  ~/.config/micro/settings.json: micro/settings.json
+  ~/.config/Code/User/settings.json: vscode/settings.json
 
 - create:
   - ~/git

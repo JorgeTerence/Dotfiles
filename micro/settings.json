@@ -1,0 +1,12 @@
+{
+    "*.fish": {
+        "tabsize": 4
+    },
+    "*.py": {
+        "tabsize": 4
+    },
+    "colorscheme": "catppuccin-frappe",
+    "parsecursor": true,
+    "ruler": false,
+    "tabsize": 2
+}
