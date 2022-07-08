@@ -5,7 +5,7 @@
 ###############
 
 set $mod Mod4
-set $terminal alacritty
+set $terminal kitty
 set $browser firefox-developer-edition
 
 set $bg 				 #22232E
@@ -34,7 +34,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
-exec alacritty
+exec $terminal
 exec --no-startup-id compton
 exec feh --bg-scale ~/Pictures/wallpaper.png
 exec --no-startup-id flameshot

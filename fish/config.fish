@@ -1,10 +1,11 @@
 if status is-interactive
 
-    # Environment variables
+    # Environment variables    
     set -gx BROWSER 'firefox-developer-edition'
     set -gx EDITOR 'lite-xl'
     set -gx VISUAL 'code'
     set -gx TERM 'kitty'
+    set -gx MICRO_TRUECOLOR 1
 
     # Aliases
     thefuck --alias | source 
