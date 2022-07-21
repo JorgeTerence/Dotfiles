@@ -18,6 +18,4 @@
 
 - shell:
   - [yay -S fish, Install fish shell]
-  - [echo /usr/local/bin/fish | sudo tee -a /etc/shells, Add fish to allowed shells]
-  - [chsh -s $(which fish), Change default shell to fish]
-  - [fish fonts/install.fish, Download fonts]
+  - [fish install.fish, Install software, themes and plugins]

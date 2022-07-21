@@ -10,7 +10,7 @@ end
 
 # Regular Fonts
 
-set fonts $(cat ~/dotfiles/fonts/fontlist.txt)
+set fonts $(cat fonts/fonts.txt)
 
 mkdir -p ~/.fonts
 cd ~/.fonts

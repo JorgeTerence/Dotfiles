@@ -2,7 +2,7 @@ if status is-interactive
 
     # Environment variables    
     set -gx BROWSER 'firefox-developer-edition'
-    set -gx EDITOR 'lite-xl'
+    set -gx EDITOR 'micro'
     set -gx VISUAL 'code'
     set -gx TERM 'kitty'
     set -gx MICRO_TRUECOLOR 1
@@ -10,18 +10,19 @@ if status is-interactive
     # Aliases
     thefuck --alias | source 
     alias cls="clear"
-    alias la="ls -la"
     alias py="python3"
-    alias bpython="python3 -m bpython"
-    alias bpy="python3 -m bpython"
+    alias bpython="py -m bpython"
+    alias bpy="bpython"
     alias kon="rm -rf"
+    alias exa="exa -l --no-user --no-time --group-directories-first"
 
     # Remove greeting
     set fish_greeting
 
     # PATH
-    set PATH -a $HOME/.cargo/bin
-    set PATH -a $HOME/go/bin
+    set -a PATH $HOME/.cargo/bin
+    set -a PATH $HOME/go/bin
+    set -a PATH $HOME/anaconda3/bin
 
     # Starship shell
     starship init fish | source

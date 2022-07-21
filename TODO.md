@@ -4,12 +4,14 @@
 - Picom
 - Qtile
 - VSCode extensions
+- VSCode config (organize, dynamic glyph margin and folding)
 - Firefox
 - Mime
 - Rofi
-- Galculator ?
 - Readme
 - Wallpapers
 - Assets
-- yay, flatpak, git, pip and vscode dotbot plugins
-
+- yay, flatpak, git, pip and vscode
+- starship
+- KDE Theme (the DE I'll be using behind a WM)
+- obsidian

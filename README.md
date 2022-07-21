@@ -5,7 +5,7 @@ _This projects uses [dotbot](https://github.com/anishathalye/dotbot)_
 ## Setup
 
 ```console
-cd ~
+cd
 
 git clone https://github.com/JorgeTerence/dotfiles
 cd dotfiles

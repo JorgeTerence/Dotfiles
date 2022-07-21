@@ -17,11 +17,10 @@
 
   // Formatting and saving files
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
 
   // Editor appearance and behavior
-  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.colorTheme": "Ayu Mirage",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "material-icon-theme",
   "editor.minimap.enabled": false,
@@ -66,8 +65,7 @@
   "python.formatting.provider": "black",
   "[python]": {
     "editor.tabSize": 4,
-    "editor.defaultFormatter": "ms-python.python",
-    "editor.formatOnPaste": false
+    "editor.defaultFormatter": "ms-python.python"
   },
 
   "[ruby]": {
@@ -135,5 +133,8 @@
   "files.autoSave": "afterDelay",
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  }
+  },
+  "zenMode.hideLineNumbers": false,
+  "editor.glyphMargin": false,
+  "cSpell.userWords": ["duckduckgo"]
 }
