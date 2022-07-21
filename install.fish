@@ -1,5 +1,7 @@
-# Install pacman and AUR packages
-yay -S - < pkglist.txt
+# Install packages from pacman, AUR, PyPi, Flathub
+yay -S --needed $(cat pkglist.txt)
+flatpak install $(cat flatpaks.txt)
+pip install yt-dlp bpython
 
 # Set FISH as default shell
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
@@ -29,3 +31,8 @@ rm -rf micro
 for plugin in "fish" "go" "quoter" "editorconfig"
     micro -plugin install $plugin
 end
+
+# SimpleFox Userstyle for Firefox Developer Edition
+git clone 'https://github.com/migueravila/SimpleFox'
+mv SimpleFox/chrome/* ~/.mozilla/firefox/*.dev*/chrome
+rm -rf SimpleFox

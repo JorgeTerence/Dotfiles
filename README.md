@@ -4,12 +4,20 @@ _This projects uses [dotbot](https://github.com/anishathalye/dotbot)_
 
 ## Setup
 
-```console
-cd
-
+```sh
 git clone https://github.com/JorgeTerence/dotfiles
 cd dotfiles
 
 pip install dotbot
 dotbot -c install.conf.yaml
 ```
+
+## Firefox customization
+
+Go to `about:config` or in the URL bar or edit `~/.mozilla/firefox/*.dev*/prefs.js` and set to `true`:
+- `toolkit.legacyUserProfileCustomizations.stylesheets`
+- `layers.acceleration.force-enabled`
+- `gfx.webrender.all`
+- `svg.context-properties.content.enabled`
+
+Should I do a script for this?

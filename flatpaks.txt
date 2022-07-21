@@ -1,0 +1,4 @@
+cc.arduino.arduinoide
+com.discordapp.Discord
+com.microsoft.Teams
+com.valvesoftware.Steam

@@ -2,8 +2,6 @@
 
 - Step by step guide
 - Picom
-- Qtile
-- VSCode extensions
 - VSCode config (organize, dynamic glyph margin and folding)
 - Firefox
 - Mime
@@ -11,7 +9,10 @@
 - Readme
 - Wallpapers
 - Assets
-- yay, flatpak, git, pip and vscode
 - starship
 - KDE Theme (the DE I'll be using behind a WM)
-- obsidian
+
+# Post install
+- Login VSCode
+- Set Firefox UserStyle
+- Firefox theme: https://addons.mozilla.org/en-US/firefox/addon/simplerentfox
