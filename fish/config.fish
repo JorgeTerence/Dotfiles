@@ -27,3 +27,7 @@ if status is-interactive
     # Starship shell
     starship init fish | source
 end
+
+if not test $DISPLAY; and test $XDG_VTNR -eq 1
+    exec startx
+end

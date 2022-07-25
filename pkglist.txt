@@ -11,8 +11,6 @@ flameshot
 gimp
 go
 htop
-i3-gaps
-i3status
 inkscape
 jdk-openjdk
 lite-xl
@@ -33,9 +31,11 @@ onefetch
 onlyoffice-desktopeditors
 picom
 python-mysql-connector
+qtile
 rofi
 rofi-emoji
 rust
+rust-src
 scrcpy
 thunderbird
 tldr

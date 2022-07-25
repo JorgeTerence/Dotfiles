@@ -18,6 +18,5 @@ Go to `about:config` or in the URL bar or edit `~/.mozilla/firefox/*.dev*/prefs.
 - `toolkit.legacyUserProfileCustomizations.stylesheets`
 - `layers.acceleration.force-enabled`
 - `gfx.webrender.all`
-- `svg.context-properties.content.enabled`
 
 Should I do a script for this?
