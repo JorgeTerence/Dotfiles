@@ -20,7 +20,7 @@
   "editor.formatOnSave": true,
 
   // Editor appearance and behavior
-  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.colorTheme": "Rosé Pine Moon",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "material-icon-theme",
   "editor.minimap.enabled": false,
@@ -136,5 +136,9 @@
   },
   "zenMode.hideLineNumbers": false,
   "editor.glyphMargin": false,
-  "cSpell.userWords": ["duckduckgo"]
+  "cSpell.userWords": ["duckduckgo"],
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "rust-analyzer.inlayHints.chainingHints.enable": false
 }

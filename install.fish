@@ -1,19 +1,19 @@
 # Install packages from pacman, AUR, PyPi, Flathub
-yay -S --needed $(cat pkglist.txt)
+yay -S --needed --noconfirm $(cat pkglist.txt)
 flatpak install $(cat flatpaks.txt)
-pip install yt-dlp bpython
+pip install yt-dlp bpython numpy pandas requests matplotlib
 
-# Set FISH as default shell
-echo /usr/local/bin/fish | sudo tee -a /etc/shells
+# Set fish as default shell
+echo /usr/local/bin/fish | sudo tee -a /etc/shells # NEED CONFIRMATION
 chsh -s $(which fish)
 
-# FISH Catppuccin theme
-curl -fLso ~/.config/fish/conf.d/frappe.fish 'https://raw.githubusercontent.com/catppuccin/fish/main/conf.d/frappe.fish'
-source ~/.config/config.fish
+# Fish theme
+git clone 'https://github.com/catppuccin/fish'
+mv fish/conf.d/frappe.fish ~/.config/fish/conf.d
+rm -rf fish
+source ~/.config/fish/config.fish
 
-# Kitty Catppuccin theme
-mkdir -p ~/.config/kitty/themes
-curl -fLso ~/.config/kitty/themes/frappe.conf 'https://raw.githubusercontent.com/catppuccin/kitty/main/frappe.conf'
+# Kitty theme
 kitty +kitten themes --reload-in=all Catppuccin-Frappe
 
 # VSCode extensions
@@ -21,7 +21,7 @@ for ext in $(cat vscode/extensions.txt)
     code --install-extension $ext
 end
 
-# Micro Catppuccin theme
+# Micro theme
 git clone 'https://github.com/catppuccin/micro'
 mkdir -p .config/micro/colorschemes
 mv micro/src/* .config/micro/colorschemes
@@ -32,7 +32,7 @@ for plugin in "fish" "go" "quoter" "editorconfig"
     micro -plugin install $plugin
 end
 
-# SimpleFox Userstyle for Firefox Developer Edition
+# SimpleFox
 git clone 'https://github.com/migueravila/SimpleFox'
 mv SimpleFox/chrome/* ~/.mozilla/firefox/*.dev*/chrome
 rm -rf SimpleFox

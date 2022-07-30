@@ -29,7 +29,7 @@ obs-studio
 obsidian
 onefetch
 onlyoffice-desktopeditors
-picom
+picom-ibhagwan-git
 python-mysql-connector
 qtile
 rofi
