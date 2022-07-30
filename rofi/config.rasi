@@ -1,0 +1,118 @@
+/* Based on the Rosé Pine Moon color scheme at https://github.com/rose-pine/rofi */
+
+* {
+    bg: #232136;
+    cur: #393552;
+    fgd: #e0def4;
+    cmt: #817c9c;
+    cya: #9ccfd8;
+    grn: #3e8fb0;
+    ora: #ea9a97;
+    pur: #c4a7e7;
+    red: #eb6f92;
+    yel: #f6c177;
+
+    font: "monospace 12";
+
+    foreground: @fgd;
+    background: @bg;
+    active-background: @cur;
+	  urgent-background: @red;
+
+    selected-background: @active-background;
+    selected-urgent-background: @urgent-background;
+    selected-active-background: @active-background;
+    separatorcolor: @active-background;
+    bordercolor: @ora;
+}
+
+#window {
+    background-color: @background;
+    border: 1;
+    border-radius: 11;
+    border-color: #777777;
+    padding: 10px;
+}
+
+#mainbox { padding: 5px; }
+
+#textbox { text-color: @foreground; }
+
+#listview {
+    border:       2px dash 0px 0px ;
+    border-color: @bordercolor;
+    spacing:      2px;
+    scrollbar:    false;
+    padding:      10px 0px 0px;
+}
+
+#element {
+    padding: 4px 8px;
+}
+
+#element.normal.normal {
+    background-color: @background;
+    text-color:       @foreground;
+}
+
+#element.normal.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}
+
+#element.normal.active {
+    background-color: @active-background;
+    text-color:       @background;
+}
+
+#element.selected.normal {
+    background-color: @selected-background;
+    text-color:       @foreground;
+}
+
+#element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color:       @foreground;
+}
+
+#element.selected.active {
+    background-color: @selected-active-background;
+    text-color:       @background;
+}
+
+#element.alternate.normal {
+    background-color: @background;
+    text-color:       @foreground;
+}
+
+#element.alternate.urgent {
+    background-color: @urgent-background;
+    text-color:       @foreground;
+}
+
+#element.alternate.active {
+    background-color: @active-background;
+    text-color:       @foreground;
+}
+
+#inputbar {
+    text-color: @foreground;
+    padding: 0px 0px 5px;
+}
+
+#case-indicator { text-color: @foreground; }
+
+#entry { text-color: @cya; }
+
+#prompt { text-color: @grn; }
+
+#textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: @grn;
+}
+
+#inputbar {
+    children:   [ prompt, textbox-prompt-colon, entry, case-indicator ];
+}

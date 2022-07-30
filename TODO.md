@@ -3,14 +3,13 @@
 - Step by step guide
 - Picom
 - VSCode config (organize, dynamic glyph margin and folding)
-- Firefox
 - Mime
-- Rofi
 - Readme
 - Wallpapers
 - Assets
 - starship
 - KDE Theme (the DE I'll be using behind a WM)
+- Emacs
 
 # Post install
 - Login VSCode
