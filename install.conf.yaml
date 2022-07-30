@@ -11,6 +11,7 @@
   ~/.config/kitty/kitty.conf: kitty/kitty.conf
   ~/.config/micro/settings.json: micro/settings.json
   ~/.config/Code/User/settings.json: vscode/settings.json
+  ~/Pictures/wallpaper.png: wallpapers/cat-keyboard.png
 
 - create:
   - ~/git
