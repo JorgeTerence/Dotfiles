@@ -1,7 +1,7 @@
 # Install packages from pacman, AUR, PyPi, Flathub
 yay -S --needed --noconfirm $(cat pkglist.txt)
 flatpak install $(cat flatpaks.txt)
-pip install yt-dlp bpython numpy pandas requests matplotlib
+pip install yt-dlp black black[jupyter] bpython numpy pandas requests matplotlib
 
 # Set fish as default shell
 echo /usr/local/bin/fish | sudo tee -a /etc/shells # NEED CONFIRMATION

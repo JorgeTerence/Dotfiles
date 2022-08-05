@@ -8,8 +8,8 @@ from libqtile.lazy import lazy
 
 @hook.subscribe.startup_once
 def autostart():
-    home = os.path.expanduser('~/.config/qtile/autostart.sh')
-    subprocess.Popen([home])
+    lazy.spawn("picom -b &")
+    lazy.spawn("flameshot &")
 
 
 mod = "mod4"
@@ -47,9 +47,9 @@ keys = [
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
-    Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
-    Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
-    Key([mod, "control"], "q", lazy.shutdown(), desc="Log out"),
+    Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
+    Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
+    Key([mod, "shift"], "q", lazy.shutdown(), desc="Log out"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
     # Apps
@@ -57,6 +57,8 @@ keys = [
     Key([mod], "d", lazy.spawn("rofi -show drun"), desc="Spawn app launcher"),
     Key([mod], "b", lazy.spawn("firefox-developer-edition"), desc="Spawn web browser"),
     Key([mod], "period", lazy.spawn("rofi -show emoji -modi emoji"), desc="Spawn emoji selector"),
+    Key([mod], "Home", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +10%"), desc="Volume up"),
+    Key([mod], "End", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -10%"), desc="Volume down")
 ]
 
 groups = [
@@ -109,11 +111,12 @@ screens = [
                 ),
                 widget.Prompt(),
                 widget.WindowName(),
+                widget.PulseVolume(padding=10),
                 widget.Systray(),
-                widget.Clock(format="%d-%m-%Y :: %H:%M"),
+                widget.Clock(format="%d/%m/%Y :: %H:%M"),
                 widget.QuickExit(),
             ],
-            30,
+            25,
             background="#141217",
         ),
     ),

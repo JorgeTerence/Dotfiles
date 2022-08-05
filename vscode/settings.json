@@ -3,7 +3,6 @@
   "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
   "window.dialogStyle": "custom",
   "window.restoreWindows": "folders",
-
   // Fonts and glyphs
   "editor.fontFamily": "FiraCode Retina Nerd Font, monospace",
   "editor.fontWeight": "500",
@@ -16,13 +15,13 @@
   "editor.lineNumbers": "off",
 
   // Formatting and saving files
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.defaultFormatter": "",
   "editor.formatOnSave": true,
 
   // Editor appearance and behavior
   "workbench.colorTheme": "Rosé Pine Moon",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
   "editor.minimap.enabled": false,
   "diffEditor.wordWrap": "off",
   "editor.wordWrap": "off",
@@ -44,7 +43,9 @@
   "notebook.markup.fontSize": 16,
 
   // Files
-  "workbench.editorAssociations": { "*.ipynb": "jupyter-notebook" },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -68,17 +69,9 @@
     "editor.defaultFormatter": "ms-python.python"
   },
 
-  "[ruby]": {
-    "editor.tabSize": 4
-  },
-
   // Git
   "git.autofetch": true,
   "git.confirmSync": false,
-
-  // C#
-  "csharp.referencesCodeLens.enabled": false,
-  "csharp.suppressDotnetInstallWarning": true,
 
   // Notebooks
   "jupyter.askForKernelRestart": false,
@@ -92,11 +85,15 @@
   "react-native.packager.port": 19002,
   "react-native-tools.networkInspector.consoleLogsColorTheme": "Dark",
   "todohighlight.isEnable": true,
-  "cssvar.files": ["./node_modules/open-props/open-props.min.css"],
-  "cssCustomProperties.files": ["./node_modules/open-props/open-props.min.css"],
+  "cssvar.files": [
+    "./node_modules/open-props/open-props.min.css"
+  ],
+  "cssCustomProperties.files": [
+    "./node_modules/open-props/open-props.min.css"
+  ],
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
-  "template-string-converter.quoteType": "single",
+  "template-string-converter.quoteType": "double",
   "prettier.arrowParens": "avoid",
   "helium-icon-theme.saturation": 1,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -127,18 +124,20 @@
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "[latex]": {
-    "editor.defaultFormatter": "mathematic.vscode-latex"
-  },
   "files.autoSave": "afterDelay",
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
   "zenMode.hideLineNumbers": false,
   "editor.glyphMargin": false,
-  "cSpell.userWords": ["duckduckgo"],
+  "cSpell.userWords": [
+    "Antônio",
+    "duckduckgo"
+  ],
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
-  "rust-analyzer.inlayHints.chainingHints.enable": false
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "npm.keybindingsChangedWarningShown": true,
+  "breadcrumbs.enabled": false
 }
