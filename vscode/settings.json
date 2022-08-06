@@ -1,143 +1,148 @@
 {
-  // Window Behavior
-  "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
+  // Window and Behavior
+  "window.title": "${dirty}${rootName}${separator}${activeEditorMedium}",
   "window.dialogStyle": "custom",
   "window.restoreWindows": "folders",
-  // Fonts and glyphs
-  "editor.fontFamily": "FiraCode Retina Nerd Font, monospace",
+  "workbench.startupEditor": "none",
+  "window.menuBarVisibility": "hidden",
+
+  // Workbench
+  "workbench.colorTheme": "Rosé Pine Moon",
+  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+  "workbench.productIconTheme": "fluent-icons",
+
+  "workbench.editor.labelFormat": "medium",
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.tips.enabled": false,
+
+  "workbench.activityBar.visible": false,
+  "workbench.sideBar.location": "right",
+
+  // Editor
+  "editor.fontFamily": "FiraCode Nerd Font",
   "editor.fontWeight": "500",
   "editor.fontSize": 15,
   "editor.fontLigatures": true,
+
   "editor.tabSize": 2,
   "editor.cursorWidth": 2,
   "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
   "editor.lineHeight": 1.4,
   "editor.lineNumbers": "off",
-
-  // Formatting and saving files
-  // "editor.defaultFormatter": "",
-  "editor.formatOnSave": true,
-
-  // Editor appearance and behavior
-  "workbench.colorTheme": "Rosé Pine Moon",
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
-  "editor.minimap.enabled": false,
-  "diffEditor.wordWrap": "off",
-  "editor.wordWrap": "off",
-  "editor.suggestSelection": "first",
   "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.acceptSuggestionOnEnter": "smart",
-  "editor.cursorBlinking": "phase",
   "workbench.list.smoothScrolling": true,
-  "explorer.sortOrder": "type",
-  "explorer.compactFolders": false,
-  "window.menuBarVisibility": "toggle",
-  "workbench.startupEditor": "none",
-  "editor.mouseWheelZoom": false,
-  "explorer.confirmDragAndDrop": false,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "diffEditor.wordWrap": "off",
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.bracketPairColorization.enabled": false,  
 
-  // Jupyter notebooks
-  "notebook.markup.fontSize": 16,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.formatOnSave": true,
+  "editor.dragAndDrop": false,
+  "editor.renderLineHighlight": "all",
+  "editor.scrollBeyondLastLine": false,
+  "editor.cursorSurroundingLines": 5,
+  "editor.useTabStops": true,
 
-  // Files
+  "breadcrumbs.symbolSortOrder": "type",
+  "breadcrumbs.filePath": "last",
+  "editor.glyphMargin": false,
+  "editor.minimap.enabled": false,
+
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
+
+  // Explorer and Files
+  "files.autoSave": "afterDelay",
+  "explorer.openEditors.visible": 0,
+  "explorer.decorations.badges": false,
+  "explorer.sortOrder": "type",
+  "explorer.compactFolders": false,
+  "workbench.tree.indent": 10,
+
   "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "**/.cache": true,
+    "**/venv": true,
   },
 
   // Integrated terminal
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font, monospace",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.letterSpacing": 1,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.tabs.showActiveTerminal": "singleTerminalOrNarrow",
 
+  // Jupyter notebooks
+  "notebook.markup.fontSize": 16,
+  "jupyter.askForKernelRestart": false,
+  "jupyter.themeMatplotlibPlots": true,
+  "notebook.cellToolbarVisibility": "hover",
+  "notebook.cellToolbarLocation": { "default": "left" },
+
+  // Git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "gitlens.showWelcomeOnInstall": false,
+
+  // Live Share
+  "liveshare.launcherClient": "visualStudioCode",
+  "liveshare.allowGuestTaskControl": true,
+  "liveshare.notebooks.allowGuestExecuteCells": true,
+  "liveshare.presence": true,
+
   // Python
-  "python.languageServer": "Pylance",
-  "python.analysis.typeCheckingMode": "off",
-  "python.formatting.provider": "black",
   "[python]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.python"
   },
 
-  // Git
-  "git.autofetch": true,
-  "git.confirmSync": false,
+  "python.languageServer": "Pylance",
+  "python.formatting.provider": "black",
 
-  // Notebooks
-  "jupyter.askForKernelRestart": false,
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.linting.enabled": true,
 
-  // Extensions
-  "svg.preview.mode": "svg",
-  "react-native.packager.port": 19002,
-  "react-native-tools.networkInspector.consoleLogsColorTheme": "Dark",
-  "todohighlight.isEnable": true,
-  "cssvar.files": [
-    "./node_modules/open-props/open-props.min.css"
-  ],
-  "cssCustomProperties.files": [
-    "./node_modules/open-props/open-props.min.css"
-  ],
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single",
-  "template-string-converter.quoteType": "double",
-  "prettier.arrowParens": "avoid",
-  "helium-icon-theme.saturation": 1,
+  // JS + TS + Libraries
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
-  "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
-  },
-  "terminal.integrated.defaultProfile.linux": "fish",
-  "editor.bracketPairColorization.enabled": false,
-  "go.toolsManagement.autoUpdate": true,
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "gitlens.showWelcomeOnInstall": false,
-  "[go.sum]": {
-    "editor.defaultFormatter": "golang.go"
-  },
-  "[go.mod]": {
-    "editor.defaultFormatter": "golang.go"
-  },
-  "telemetry.telemetryLevel": "off",
+  "javascript.format.semicolons": "insert",
+  "javascript.preferences.quoteStyle": "double",
+
+  "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
   "svelte.enable-ts-plugin": true,
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
+
+  // Go
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
   },
-  "files.autoSave": "afterDelay",
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
-  "zenMode.hideLineNumbers": false,
-  "editor.glyphMargin": false,
-  "cSpell.userWords": [
-    "Antônio",
-    "duckduckgo"
-  ],
+  "[go.sum]": { "editor.defaultFormatter": "golang.go" },
+  "[go.mod]": { "editor.defaultFormatter": "golang.go" },
+
+  // Rust
   "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.tabSize": 4
   },
   "rust-analyzer.inlayHints.chainingHints.enable": false,
-  "npm.keybindingsChangedWarningShown": true,
-  "breadcrumbs.enabled": false
+
+  // Other
+  "[dockerfile]": { "editor.defaultFormatter": "ms-azuretools.vscode-docker" },
+  "[jsonc]": { "editor.defaultFormatter": "vscode.json-language-features" },
+
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "editor.tabSize": 4
+  },
+  
+  "search.showLineNumbers": true,
+  "telemetry.telemetryLevel": "crash",
+  "editor.accessibilitySupport": "off",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }

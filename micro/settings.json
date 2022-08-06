@@ -1,12 +1,11 @@
 {
-    "*.fish": {
-        "tabsize": 4
-    },
-    "*.py": {
-        "tabsize": 4
-    },
-    "colorscheme": "catppuccin-frappe",
-    "parsecursor": true,
-    "ruler": false,
-    "tabsize": 2
+  "*.fish": { "tabsize": 4 },
+  "*.go": { "tabsize": 4 },
+  "*.py": { "tabsize": 4 },
+  "*.rb": { "tabsize": 4 },
+  "*.rs": { "tabsize": 4 },
+  "colorscheme": "catppuccin-frappe",
+  "parsecursor": true,
+  "ruler": false,
+  "tabsize": 2
 }

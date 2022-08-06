@@ -1,0 +1,18 @@
+[character]
+success_symbol = "[](green)"
+error_symbol = "[](red)"
+
+[sudo]
+disabled = false
+symbol = "🧙 "
+
+[python]
+python_binary = ["./venv/bin/python3", "python3"]
+style = "green bold"
+
+[git_branch]
+symbol = " "
+style = "bold fg:#B585E6"
+
+[git_status]
+style = "bold fg:#B585E6"

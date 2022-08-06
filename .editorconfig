@@ -1,0 +1,9 @@
+[*]
+charset = utf-8
+indent_style = space
+insert_final_newline = true
+end_of_line = lf
+tab_width = 2
+
+[*.{fish,py,sh,conf}]
+tab_width = 4

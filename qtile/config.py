@@ -1,15 +1,14 @@
-import os
 import subprocess
 
 from libqtile import bar, hook, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
-
+from libqtile.layout import bsp, floating
 
 @hook.subscribe.startup_once
 def autostart():
-    lazy.spawn("picom -b &")
-    lazy.spawn("flameshot &")
+    subprocess.Popen(["picom", "-b"])
+    subprocess.Popen(["flameshot"])
 
 
 mod = "mod4"
@@ -19,9 +18,6 @@ active = "#C192D1"
 dimmed = "#2A2E3B"
 
 keys = [
-    # A list of available commands that can be bound to keys can be found
-    # at https://docs.qtile.org/en/latest/manual/config/lazy.html
-
     # Switch between windows
     Key([mod], "Left", lazy.layout.left(), desc="Move focus left"),
     Key([mod], "Right", lazy.layout.right(), desc="Move focus right"),
@@ -61,15 +57,12 @@ keys = [
     Key([mod], "End", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -10%"), desc="Volume down")
 ]
 
+icons = ["", "", "", "", "", "", "漣", ""]
+matches = [["kitty"], ["code", "obsidian"], ["firefox", "firefoxdeveloperedition"], [], [], [], [], []]
+
 groups = [
-    Group("", matches=[Match(wm_class="kitty")]),
-    Group("", matches=[Match(wm_class="code")]),
-    Group("", matches=[Match(wm_class="firefoxdeveloperedition")]),
-    Group(""),
-    Group(""),
-    Group(""),
-    Group("漣"),
-    Group(""),
+    Group(icon, matches=[Match(wm_class=app) for app in apps])
+    for icon, apps in zip(icons, matches)
 ]
 
 for i, group in enumerate(groups, 1):
@@ -84,11 +77,7 @@ for i, group in enumerate(groups, 1):
     )
 
 layouts = [
-    layout.Columns(border_on_single=True, border_focus="#777777", border_normal=dimmed, border_width=1, margin=15),
-    layout.Max(),
-    layout.Bsp(),
-    layout.MonadTall(),
-    layout.Tile(),
+  bsp.Bsp(border_on_single=True, border_focus="#777777", border_normal=dimmed, border_width=1, margin=15)
 ]
 
 widget_defaults = {"font": "monospace", "fontsize": 14, "padding": 2}
@@ -116,7 +105,8 @@ screens = [
                 widget.Clock(format="%d/%m/%Y :: %H:%M"),
                 widget.QuickExit(),
             ],
-            25,
+            30,
+            margin=[10, 15, 0, 15],
             background="#141217",
         ),
     ),
@@ -134,9 +124,9 @@ dgroups_app_rules = []
 follow_mouse_focus = True
 bring_front_click = False
 cursor_warp = False
-floating_layout = layout.Floating(
+floating_layout = floating.Floating(
     float_rules=[
-        *layout.Floating.default_float_rules,
+        *floating.Floating.default_float_rules,
         Match(wm_class="confirmreset"),  # gitk
         Match(wm_class="makebranch"),  # gitk
         Match(wm_class="maketag"),  # gitk

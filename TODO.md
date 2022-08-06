@@ -1,27 +1,26 @@
 # TODO
 
 - Step by step guide
-- Picom
-- VSCode config (organize, dynamic glyph margin and folding, update extensions, theme, icons)
+- VSCode extensions
 - Mime
 - Readme
 - Wallpapers
 - Assets
-- starship
 - KDE Theme (the DE I'll be using behind a WM)
-- Qtile autostart
-- Rofi
-- Micro rosé pine
 - Symlinks
+- Global Prettier and EditorConfig
+- Git config
 
 # Post install
+
 - Login VSCode
 - Set Firefox UserStyle
 - Firefox theme: https://addons.mozilla.org/en-US/firefox/addon/simplerentfox
+- Set Firefox homepage and new tab page
 
 ## What will I be working with?
+
 - Python
 - JS, TS
 - Rust
 - Go
-- Ruby

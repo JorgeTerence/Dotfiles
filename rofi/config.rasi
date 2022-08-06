@@ -1,5 +1,3 @@
-/* Based on the Rosé Pine Moon color scheme at https://github.com/rose-pine/rofi */
-
 * {
     bg: #232136;
     cur: #393552;
@@ -17,7 +15,7 @@
     foreground: @fgd;
     background: @bg;
     active-background: @cur;
-	  urgent-background: @red;
+	urgent-background: @red;
 
     selected-background: @active-background;
     selected-urgent-background: @urgent-background;
@@ -48,6 +46,12 @@
 
 #element {
     padding: 4px 8px;
+    border-radius: 6;
+    children: [ element-icon, element-text ];
+}
+
+#element-icon {
+    margin: 0 10 0 0;
 }
 
 #element.normal.normal {
@@ -107,12 +111,12 @@
 #prompt { text-color: @grn; }
 
 #textbox-prompt-colon {
-    expand:     false;
-    str:        ":";
-    margin:     0px 0.3em 0em 0em ;
+    expand: false;
+    str: ":";
+    margin: 0px 0.3em 0em 0em ;
     text-color: @grn;
 }
 
 #inputbar {
-    children:   [ prompt, textbox-prompt-colon, entry, case-indicator ];
+    children: [ prompt, textbox-prompt-colon, entry, case-indicator ];
 }
