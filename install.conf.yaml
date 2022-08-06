@@ -7,17 +7,23 @@
 - link:
   ~/.config/fish/config.fish: fish/config.fish
   ~/.config/fonts/fonts.conf: fonts/fonts.conf
-  ~/.config/i3/config: i3/config
   ~/.config/kitty/kitty.conf: kitty/kitty.conf
   ~/.config/micro/settings.json: micro/settings.json
+  ~/.config/picom/picom.conf: picom/picom.conf
+  ~/.config/qtile/config.py: qtile/config.py
+  ~/.config/rofi/config.rasi: rofi/config.rasi
+  ~/.config/starship.toml: starship/starship.toml
   ~/.config/Code/User/settings.json: vscode/settings.json
+  # VSCode keybindings
   ~/Pictures/wallpaper.png: wallpapers/cat-keyboard.png
+  ~/.editorconfig: .editorconfig
+  ~/.gitconfig: .gitconfig
 
 - create:
   - ~/git
-  - ~/.fonts
 
 - shell:
   - [yay -S fish, Install fish shell]
   - [fish install.fish, Install software, themes and plugins]
   - [fish fonts/install.fish, Install fonts]
+  - [python3 firefox.py, Set firefox preferences]

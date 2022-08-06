@@ -29,3 +29,5 @@ skyapps.fish-vscode
 mvllow.rose-pine
 rust-lang.rust-analyzer
 syler.sass-indented
+mikestead.dotenv
+DavidAnson.vscode-markdownlint

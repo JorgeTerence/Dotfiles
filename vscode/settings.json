@@ -13,7 +13,6 @@
 
   "workbench.editor.labelFormat": "medium",
   "workbench.editor.tabCloseButton": "off",
-  "workbench.tips.enabled": false,
 
   "workbench.activityBar.visible": false,
   "workbench.sideBar.location": "right",
