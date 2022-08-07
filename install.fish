@@ -17,14 +17,14 @@ source ~/.config/fish/config.fish
 kitty +kitten themes --reload-in=all Catppuccin-Frappe
 
 # VSCode extensions
-for ext in $(cat vscode/extensions.txt)
+for ext in $(cat .config/vscode/extensions.txt)
     code --install-extension $ext
 end
 
 # Micro theme
 git clone 'https://github.com/catppuccin/micro'
-mkdir -p .config/micro/colorschemes
-mv micro/src/* .config/micro/colorschemes
+mkdir -p ~/.config/micro/colorschemes
+mv micro/src/* ~/.config/micro/colorschemes
 rm -rf micro
 
 # Micro plugins

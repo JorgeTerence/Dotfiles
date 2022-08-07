@@ -5,17 +5,17 @@
 - clean: ["~"]
 
 - link:
-  ~/.config/fish/config.fish: fish/config.fish
-  ~/.config/fonts/fonts.conf: fonts/fonts.conf
-  ~/.config/kitty/kitty.conf: kitty/kitty.conf
-  ~/.config/micro/settings.json: micro/settings.json
-  ~/.config/picom/picom.conf: picom/picom.conf
-  ~/.config/qtile/config.py: qtile/config.py
-  ~/.config/rofi/config.rasi: rofi/config.rasi
-  ~/.config/starship.toml: starship/starship.toml
-  ~/.config/Code/User/settings.json: vscode/settings.json
+  ~/.config/fish/config.fish: .config/fish/config.fish
+  ~/.config/fonts/fonts.conf: .config/fonts/fonts.conf
+  ~/.config/kitty/kitty.conf: .config/kitty/kitty.conf
+  ~/.config/micro/settings.json: .config/micro/settings.json
+  ~/.config/picom/picom.conf: .config/picom/picom.conf
+  ~/.config/qtile/config.py: .config/qtile/config.py
+  ~/.config/rofi/config.rasi: .config/rofi/config.rasi
+  ~/.config/starship.toml: .config/starship/starship.toml
+  ~/.config/Code/User/settings.json: .config/vscode/settings.json
   # VSCode keybindings
-  ~/Pictures/wallpaper.png: wallpapers/office.png
+  ~/Pictures/wallpaper.png: .wallpapers/office.png
   ~/.editorconfig: .editorconfig
   ~/.gitconfig: .gitconfig
 
