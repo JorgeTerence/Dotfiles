@@ -27,11 +27,14 @@ Here you'll find:
 I'm using [`dotbot`](https://github.com/anishathalye/dotbot) for managing symlinks
 
 ```sh
-git clone 'https://github.com/JorgeTerence/dotfiles'
-cd dotfiles
-
+yay -S git base-devel fish
 pip install dotbot
+
+git clone 'https://github.com/JorgeTerence/Dotfiles'
+cd Dotfiles
+
 dotbot -c install.conf.yaml
+./install.fish
 ```
 
 ## Post-install

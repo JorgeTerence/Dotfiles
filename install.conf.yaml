@@ -21,9 +21,3 @@
 
 - create:
   - ~/git
-
-- shell:
-  - [yay -S fish, Install fish shell]
-  - [fish install.fish, Install software, themes and plugins]
-  - [fish fonts/install.fish, Install fonts]
-  - [python3 firefox.py, Set firefox preferences]

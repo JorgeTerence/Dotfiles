@@ -1,3 +1,5 @@
+#!/usr/bin/fish
+
 # Install packages from pacman, AUR, PyPi, Flathub
 yay -S --needed --noconfirm $(cat pkglist.txt)
 flatpak install $(cat flatpaks.txt)
@@ -36,3 +38,9 @@ end
 git clone 'https://github.com/migueravila/SimpleFox'
 mv SimpleFox/chrome/* ~/.mozilla/firefox/*.dev*/chrome
 rm -rf SimpleFox
+
+# Install fonts
+./.config/fonts/install.fish
+
+# Firefox config
+./.config/firefox/setup.py

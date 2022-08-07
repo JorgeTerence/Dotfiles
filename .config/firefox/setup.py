@@ -1,3 +1,5 @@
+#!/bin/python3
+
 import os
 
 home = os.path.expanduser("~")

@@ -1,3 +1,5 @@
+#!/usr/bin/fish
+
 # Functions
 
 function hyphenize
