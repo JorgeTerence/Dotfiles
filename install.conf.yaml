@@ -15,7 +15,7 @@
   ~/.config/starship.toml: starship/starship.toml
   ~/.config/Code/User/settings.json: vscode/settings.json
   # VSCode keybindings
-  ~/Pictures/wallpaper.png: wallpapers/cat-keyboard.png
+  ~/Pictures/wallpaper.png: wallpapers/office.png
   ~/.editorconfig: .editorconfig
   ~/.gitconfig: .gitconfig
 

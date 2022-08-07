@@ -17,8 +17,6 @@ lite-xl
 lutris
 mariadb
 micro
-minecraft-launcher
-minted
 mpv
 neofetch
 net-tools
