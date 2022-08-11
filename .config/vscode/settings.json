@@ -105,7 +105,6 @@
 
   "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "basic",
-  "python.linting.enabled": true,
 
   // JS + TS + Libraries
   "javascript.updateImportsOnFileMove.enabled": "always",

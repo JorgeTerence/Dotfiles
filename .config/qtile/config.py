@@ -14,7 +14,7 @@ def autostart():
 mod = "mod4"
 terminal = "kitty"
 
-active = "#C192D1"
+active = "#FFFFFF"
 dimmed = "#2A2E3B"
 
 keys = [
@@ -87,7 +87,7 @@ extension_defaults = widget_defaults.copy()
 screens = [
     Screen(
         wallpaper_mode="fill",
-        wallpaper="~/Pictures/wallpaper.png",
+        wallpaper="~/Dotfiles/.wallpapers/gutwhale.png",
         top=bar.Bar(
             [
                 widget.GroupBox(
@@ -98,12 +98,11 @@ screens = [
                     use_mouse_wheel=False,
                     padding=8
                 ),
-                widget.Prompt(),
-                widget.WindowName(),
+                widget.WindowName(format="{name:.45s}"),
                 widget.PulseVolume(padding=10),
-                widget.Systray(),
-                widget.Clock(format="%d/%m/%Y :: %H:%M"),
-                widget.QuickExit(),
+                widget.Systray(icon_size=16, padding=6),
+                widget.Clock(format="%d/%m/%Y :: %H:%M", padding=10),
+                widget.QuickExit(default_text="⏻", countdown_format="[{}]", padding=10)
             ],
             30,
             margin=[10, 15, 0, 15],

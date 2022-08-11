@@ -7,7 +7,7 @@ insert_final_newline = true
 end_of_line = lf
 tab_width = 2
 
-[*.{conf,fish,py,rb,rs,sh}]
+[*.{conf,fish,py,rb,rs,sh,ipynb}]
 tab_width = 4
 
 [*.go]

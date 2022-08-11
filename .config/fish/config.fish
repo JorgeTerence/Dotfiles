@@ -14,7 +14,7 @@ if status is-interactive
     alias bpython="py -m bpython"
     alias bpy="bpython"
     alias kon="rm -rf"
-    alias exa="exa -l --no-user --no-time --group-directories-first"
+    alias exa="exa -la --no-user --no-time --group-directories-first"
 
     # Remove greeting
     set fish_greeting

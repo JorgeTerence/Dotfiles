@@ -30,6 +30,7 @@ onlyoffice-desktopeditors
 picom-ibhagwan-git
 python-mysql-connector
 qtile
+rmatrix
 rofi
 rofi-emoji
 rust
