@@ -1,7 +1,6 @@
 #!/usr/bin/fish
 
 # Functions
-
 function hyphenize
     echo $(string lower $argv | string replace ' ' '-')
 end
@@ -35,7 +34,6 @@ echo "\nCleaning up"
 rm -f *.zip *.txt
 
 # Nerd Font
-
 set repo ryanoasis/nerd-fonts/raw/master/patched-fonts
 set nerdfont "Fira Code"
 
@@ -46,3 +44,4 @@ for weight in Light Regular Retina Medium SemiBold Bold
     echo "Downloading $nerdfont $weight"
     curl -fLso "$fullname" $(url "https://github.com/$repo/$fontjoin/$weight/complete/$fullname")
 end
+

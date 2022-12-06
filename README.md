@@ -27,21 +27,22 @@ Here you'll find:
 I'm using [`dotbot`](https://github.com/anishathalye/dotbot) for managing symlinks
 
 ```sh
-yay -S git base-devel fish
-pip install dotbot
+sudo pacman -Syu --noconfirm # Go do something else
+sudo pacman -S git fish python-pip --noconfirm
+pyhton3 -m pip install dotbot
 
 git clone 'https://github.com/JorgeTerence/Dotfiles'
 cd Dotfiles
 
-dotbot -c install.conf.yaml
+pyhton3 -m dotbot -c install.conf.yaml
 ./install.fish
 ```
 
 ## Post-install
 
-- Install the [SimplerentFox](https://addons.mozilla.org/en-US/firefox/addon/simplerentfox) Firefox theme.
-- Log in to VSCode, Thunderbird, Discord, Steam and MS Teams.
-- Get GitHub sign-in key
+- Install and set up [https://github.com/ranmaru22/firefox-vertical-tabs](Firefox Vertical Tabs)
+- Install San Francisco font and set as system font
+- Log in to VSCode, Thunderbird, Discord, Teams etc.
 
 ## Gallery
 
@@ -57,7 +58,5 @@ Panels by [Franrekkk](https://www.reddit.com/user/Franrekkk)
 
 ## TODO
 
-- [ ] Assets
 - [ ] KDE Theme
 - [ ] VSCode Keybindings
-- [ ] Session lock and screen saver

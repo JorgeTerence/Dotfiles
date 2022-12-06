@@ -7,3 +7,4 @@ Noto Serif
 Merriweather
 Lato
 Inter
+Nunito

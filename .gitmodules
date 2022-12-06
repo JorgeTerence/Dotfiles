@@ -1,0 +1,9 @@
+[submodule "external/alacritty"]
+	path = external/alacritty
+	url = https://github.com/rose-pine/alacritty
+[submodule "external/fish"]
+	path = external/fish
+	url = https://github.com/EuCaue/fish
+[submodule "external/micro"]
+	path = external/micro
+	url = https://github.com/catppuccin/micro

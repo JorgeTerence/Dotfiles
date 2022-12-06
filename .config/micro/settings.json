@@ -14,7 +14,7 @@
     "*.rs": {
         "tabsize": 4
     },
-    "colorscheme": "catppuccin-frappe",
+    "colorscheme": "catppuccin-mocha",
     "parsecursor": true,
     "ruler": false,
     "tabsize": 2

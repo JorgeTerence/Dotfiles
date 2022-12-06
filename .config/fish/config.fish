@@ -1,14 +1,13 @@
 if status is-interactive
 
     # Environment variables    
-    set -gx BROWSER 'firefox-developer-edition'
+    set -gx BROWSER 'firefox'
     set -gx EDITOR 'micro'
     set -gx VISUAL 'code'
-    set -gx TERM 'kitty'
+    set -gx TERM 'alacritty'
     set -gx MICRO_TRUECOLOR 1
 
     # Aliases
-    thefuck --alias | source 
     alias cls="clear"
     alias py="python3"
     alias bpython="py -m bpython"
@@ -22,7 +21,6 @@ if status is-interactive
     # PATH
     set -a PATH $HOME/.cargo/bin
     set -a PATH $HOME/go/bin
-    set -a PATH $HOME/anaconda3/bin
 
     # Starship shell
     starship init fish | source

@@ -1,6 +1,11 @@
 [user]
-	name = JorgeTerence
+	name = Jorge Terence
 	email = jorge.terence@outlook.com
   editor = micro
 [init]
 	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

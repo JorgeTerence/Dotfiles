@@ -5,19 +5,20 @@
 - clean: ["~"]
 
 - link:
-  ~/.config/fish/config.fish: .config/fish/config.fish
-  ~/.config/fonts/fonts.conf: .config/fonts/fonts.conf
-  ~/.config/kitty/kitty.conf: .config/kitty/kitty.conf
-  ~/.config/micro/settings.json: .config/micro/settings.json
-  ~/.config/picom/picom.conf: .config/picom/picom.conf
-  ~/.config/qtile/config.py: .config/qtile/config.py
-  ~/.config/rofi/config.rasi: .config/rofi/config.rasi
-  ~/.config/starship.toml: .config/starship/starship.toml
-  ~/.config/Code/User/settings.json: .config/vscode/settings.json
-  # VSCode keybindings
-  ~/Pictures/wallpaper.png: .wallpapers/office.png
-  ~/.editorconfig: .editorconfig
-  ~/.gitconfig: .gitconfig
+    ~/.config/fish/config.fish:
+      path: .config/fish/config.fish
+      force: true
+    ~/.config/micro/settings.json:
+      path: .config/micro/settings.json
+      force: true
+    ~/.config/starship.toml: .config/starship/starship.toml
+    ~/.config/alacritty/alacritty.yml: .config/alacritty/alacritty.yml
+    ~/.config/fish/conf.d/rose-pine.fish: external/fish/rose-pine.fish
+    ~/.config/micro/colorschemes/catppuccin-mocha.micro: external/micro/src/external/micro/src/catppuccin-mocha.micro
+
+    # VSCode keybindings
+    ~/.editorconfig: .editorconfig
+    ~/.gitconfig: .gitconfig
 
 - create:
-  - ~/git
+    - ~/git
