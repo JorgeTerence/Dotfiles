@@ -1,7 +1,5 @@
 # Jorge Terence's Dotfiles
 
-<!-- Preview -->
-
 ## About
 
 Here you'll find:
@@ -40,15 +38,13 @@ pyhton3 -m dotbot -c install.conf.yaml
 
 ## Post-install
 
-- Install and set up [https://github.com/ranmaru22/firefox-vertical-tabs](Firefox Vertical Tabs)
+- Install and set up [Firefox Vertical Tabs](https://github.com/ranmaru22/firefox-vertical-tabs)
 - Install San Francisco font and set as system font
 - Log in to VSCode, Thunderbird, Discord, Teams etc.
 
 ## Gallery
 
-![vscode](assets/vscode.png)
-
-![kitty](assets/terminals.png)
+TODO
 
 ## Wallpapers
 
