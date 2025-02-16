@@ -1,0 +1,11 @@
+wsl
+ubuntu
+power toys
+japanese keyboard
+
+--*winfetch
+--*cloudflare cli
+--*aws cli
+--*git
+--*eza
+--*micro

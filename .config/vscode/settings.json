@@ -1,1 +1,136 @@
-/home/jorge/.config/Code/User/settings.json
+{
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  // Window and Behavior
+  "window.dialogStyle": "custom",
+  "window.restoreWindows": "folders",
+  "workbench.startupEditor": "readme",
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.editor.labelFormat": "medium",
+  // Editor
+  "editor.fontFamily": "Fira Code, Maple Mono, JetBrains Mono, Consolas, 'Courier New', monospace",
+  "editor.fontWeight": "500",
+  "editor.fontLigatures": true,
+  "editor.cursorWidth": 4,
+  "editor.cursorStyle": "block",
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "editor.lineHeight": 1.4,
+  "editor.smoothScrolling": true,
+  "diffEditor.wordWrap": "off",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.dragAndDrop": false,
+  "editor.renderLineHighlight": "all",
+  "editor.scrollBeyondLastLine": false,
+  "editor.cursorSurroundingLines": 5,
+  "editor.useTabStops": true,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.symbolSortOrder": "type",
+  "breadcrumbs.filePath": "last",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "explorer.decorations.badges": false,
+  "explorer.sortOrder": "type",
+  "explorer.compactFolders": false,
+  "workbench.tree.indent": 25,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.cache": true,
+    "**/venv": true
+  },
+  // Integrated terminal
+  "terminal.integrated.cursorStyle": "block",
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.letterSpacing": 1,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.tabs.showActiveTerminal": "singleTerminalOrNarrow",
+  // Jupyter notebooks
+  "notebook.markup.fontSize": 13,
+  "jupyter.askForKernelRestart": false,
+  "jupyter.themeMatplotlibPlots": true,
+  "notebook.cellToolbarVisibility": "hover",
+  "notebook.cellToolbarLocation": {
+    "default": "left"
+  },
+  // Git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "liveshare.launcherClient": "visualStudioCode",
+  "liveshare.allowGuestTaskControl": true,
+  "liveshare.notebooks.allowGuestExecuteCells": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.languageServer": "Pylance",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "off",
+  "editor.foldingImportsByDefault": true,
+  "editor.defaultColorDecorators": "auto",
+  "[javascript][javascriptreact][json][css][typescript][typescriptreact][markdown][html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.format.semicolons": "insert",
+  "javascript.preferences.quoteStyle": "double",
+  "[javascript, html, css, typescript, javascriptreact]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "[go][go.sum][go.mod]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.tabSize": 4
+  },
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "[dockerfile][dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "editor.tabSize": 4
+  },
+  "search.showLineNumbers": true,
+  "telemetry.telemetryLevel": "crash",
+  "editor.accessibilitySupport": "off",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "task.allowAutomaticTasks": "on",
+  "files.autoSave": "afterDelay",
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.fontSize": 11,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "terminal.integrated.fontSize": 11,
+  "workbench.sideBar.location": "right",
+  "window.menuBarVisibility": "compact",
+  "gitlens.views.scm.grouped.views": {
+    "commits": false,
+    "branches": false,
+    "remotes": true,
+    "stashes": true,
+    "tags": true,
+    "worktrees": true,
+    "contributors": true,
+    "repositories": false,
+    "searchAndCompare": false,
+    "launchpad": false
+  },
+  "debug.console.fontSize": 12,
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    ".env*": "dotenv"
+  },
+  "dotenv.enableAutocloaking": false,
+  "editor.cursorBlinking": "phase"
+}

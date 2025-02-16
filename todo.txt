@@ -1,0 +1,2 @@
+- starship prompt
+- add new wallpapers
